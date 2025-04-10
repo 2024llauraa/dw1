@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background-color: #ffe6f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 2vh 2vw;
+}
+
+.title {
+    font-size: 5vh; /* Ajustado para ser relativo à altura da tela */
+    margin-bottom: 2vh;
+    color: #ffaac0;
+}
+
+.team-names input {
+    margin: 1vh;
+    padding: 2vh;
+    font-size: 2vw; /* Ajustado para largura da tela */
+    text-align: center;
+    width: 40vw; /* Ajustado para largura da tela */
+    border: 2px solid #fc96b1; /* Bordas em rosa claro */
+    border-radius: 5px;
+    background-color: #f8bbd0; /* Fundo rosa suave nos campos de input */
+    color: #e66290b6; /* Cor do texto no input */
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw; /* Ajustado para largura da tela */
+    margin: 4vh 0;
+}
+
+.team {
+    text-align: center;
+    font-size: 4vh; /* Ajustado para ser relativo à altura da tela */
+    background-color: #fff;
+    padding: 4vh;
+    border-radius: 2vw;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.1);
+    width: 40vw; /* Ajustado para largura da tela */
+    border: 2px solid #fc96b1; /* Bordas em rosa claro */
+}
+
+.team button {
+    padding: 2vh;
+    font-size: 2vw; /* Ajustado para largura da tela */
+    margin: 2vh 0;
+    width: 80%;
+    background-color: #ffaac0; /* Botões em rosa escuro */
+    color: #000000; /* Texto branco nos botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.team button:hover {
+    background-color: #ff759a; /* Efeito de hover, rosa mais suave */
+}
+
+.set {
+    margin: 4vh;
+}
+
+.set button {
+    font-size: 3vh; /* Ajustado para ser relativo à altura da tela */
+    padding: 4vh;
+    width: 30vw; /* Ajustado para largura da tela */
+    background-color: #ffaac0; /* Botão para o set em rosa escuro */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.set button:hover {
+    background-color: #ff6c93; /* Efeito de hover no botão de set */
+}
+
+#messages {
+    text-align: center;
+    font-size: 2vh; /* Ajustado para ser relativo à altura da tela */
+    color: #ff6c93;
+}
+
+#history {
+    margin-top: 4vh;
+    max-width: 50vw; /* Ajustado para largura da tela */
+    overflow-y: auto;
+    height: 20vh; /* Ajustado para altura da tela */
+    background-color: #f8bbd0; /* Fundo rosa claro para o histórico */
+    border-radius: 5px;
+    padding: 2vh;
+}
+
+#history ul {
+    list-style-type: none;
+}
+
+#errorMessage {
+    color: red;
+    font-weight: bold;
+    font-size: 5vh; /* Ajustado para ser relativo à altura da tela */
+}

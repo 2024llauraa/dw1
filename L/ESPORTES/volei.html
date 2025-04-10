@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Set de Vôlei</title>
+  <link rel="stylesheet" href="volei.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+        <h1>Placar de Vôlei</h1>
+    </div>
+
+    <!-- Entrada dos nomes dos times -->
+    <div class="team-names">
+        <input type="text" id="team1Name" placeholder="Nome do Time 1">
+        <input type="text" id="team2Name" placeholder="Nome do Time 2">
+    </div>
+
+    <!-- Placares e botões de pontos -->
+    <div class="teams">
+        <div class="team" id="team1">
+            <h2 id="team1DisplayName">Time 1</h2>
+            <div class="score" id="team1Score">0</div>
+            <button onclick="incrementPoints(1)">+1 Ponto</button>
+            <button onclick="decrementPoints(1)">-1 Ponto</button>
+        </div>
+        <div class="team" id="team2">
+            <h2 id="team2DisplayName">Time 2</h2>
+            <div class="score" id="team2Score">0</div>
+            <button onclick="incrementPoints(2)">+1 Ponto</button>
+            <button onclick="decrementPoints(2)">-1 Ponto</button>
+        </div>
+    </div>
+
+    <!-- Set e Controle -->
+    <div class="set">
+        <button id="setButton" onclick="changeSet()">Set 1</button>
+    </div>
+
+    <!-- Histórico e Mensagens -->
+    <div id="messages">
+        <p id="errorMessage"></p>
+        <div id="history">
+            <h3>Histórico de Pontuação</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="volei.js"></script>
+</body>
+</html>
+
